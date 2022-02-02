@@ -1,23 +1,23 @@
-'use strict';
+'use strict'
 
-import { APIGatewayProxyEvent } from 'aws-lambda';
+import { APIGatewayProxyEvent } from 'aws-lambda'
 
 export const hello = async (event: APIGatewayProxyEvent): Promise<LambdaResponse> => {
-  return {
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-    },
-    statusCode: 200,
-    body: JSON.stringify(
-      {
-        message: 'Go Serverless v1.0! Your function executed successfully!',
-        input: event,
-      },
-      null,
-      2
-    ),
-  }
-};
+	return {
+		headers: {
+			'Access-Control-Allow-Origin': '*',
+		},
+		statusCode: 200,
+		body: JSON.stringify(
+			{
+				message: 'Go Serverless v1.0! Your function executed successfully!',
+				input: event,
+			},
+			null,
+			2
+		),
+	}
+}
 
 export type LambdaResponse = {
   headers: HeaderOption;
@@ -27,4 +27,4 @@ export type LambdaResponse = {
 
 interface HeaderOption {
   'Access-Control-Allow-Origin': string;
-};
+}
