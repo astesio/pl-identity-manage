@@ -12,6 +12,9 @@
 # Happy Coding!
 
 service: pl-identity-manage
+disabledDeprecations:
+  - CODE_1 # To disable specific deprecation with code "CODE_1"
+  - '*' # To disable all deprecation messages
 # app and org for use with dashboard.serverless.com
 #app: your-app-name
 #org: your-org-name
@@ -25,6 +28,8 @@ provider:
   runtime: nodejs12.x
 
 plugins:
+  #Add the plugins to your serverless.yml file and make sure that serverless-plugin-typescript precedes serverless-offline as the order is important:
+  - serverless-plugin-typescript 
   - serverless-offline
 
 # you can overwrite defaults here
@@ -55,8 +60,8 @@ plugins:
 
 # you can add packaging information here
 package:
- patterns:
   excludeDevDependencies: true
+
 
 functions:
   hello:
@@ -64,10 +69,10 @@ functions:
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
-#    events:
-#      - httpApi:
-#          path: /users/create
-#          method: get
+    events:
+      - httpApi:
+          path: /users/create
+          method: get
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)
