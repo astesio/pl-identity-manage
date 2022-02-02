@@ -54,12 +54,9 @@ plugins:
 #    variable1: value1
 
 # you can add packaging information here
-#package:
-#  patterns:
-#    - '!exclude-me.js'
-#    - '!exclude-me-dir/**'
-#    - include-me.js
-#    - include-me-dir/**
+package:
+ patterns:
+  excludeDevDependencies: true
 
 functions:
   hello:
