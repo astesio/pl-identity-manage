@@ -24,6 +24,9 @@ provider:
   name: aws
   runtime: nodejs12.x
 
+plugins:
+  - serverless-offline
+
 # you can overwrite defaults here
 #  stage: dev
 #  region: us-east-1
