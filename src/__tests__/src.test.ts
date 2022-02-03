@@ -1,7 +1,7 @@
-import { describe, expect } from '@jest/globals'
+import { describe, expect } from '@jest/globals';
 
 describe('Jest', () => {
-	test('test works', () => {
-		expect(1).toBe(1)
-	})
-})
+  test('test works', () => {
+    expect(1).toBe(1);
+  });
+});

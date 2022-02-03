@@ -29,7 +29,7 @@ provider:
 
 plugins:
   #Add the plugins to your serverless.yml file and make sure that serverless-plugin-typescript precedes serverless-offline as the order is important:
-  - serverless-plugin-typescript 
+  - serverless-plugin-typescript
   - serverless-offline
 
 # you can overwrite defaults here
@@ -62,13 +62,12 @@ plugins:
 package:
   excludeDevDependencies: true
 
-
 functions:
   hello:
     handler: handler.hello
-#    The following are a few example events you can configure
-#    NOTE: Please make sure to change your handler code to work with those events
-#    Check the event documentation for details
+    #    The following are a few example events you can configure
+    #    NOTE: Please make sure to change your handler code to work with those events
+    #    Check the event documentation for details
     events:
       - httpApi:
           path: /users/create
