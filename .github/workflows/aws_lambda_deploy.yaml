@@ -20,7 +20,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
       - name: Install Dependencies
-        run: npm ci
+        run: npm install
       - name: Run linters
         uses: wearerequired/lint-action@v1
         with:
