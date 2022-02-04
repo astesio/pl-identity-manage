@@ -2,7 +2,7 @@
 
 import { APIGatewayProxyEvent } from 'aws-lambda';
 
-export const hello = async (
+export const handler = async (
   event: APIGatewayProxyEvent
 ): Promise<LambdaResponse> => {
   return {
@@ -12,7 +12,7 @@ export const hello = async (
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: 'Go Serverless v1.0! Your function executed successfully!',
+        message: 'Go ForgotPassword! Your function executed successfully!',
         input: event,
       },
       null,
