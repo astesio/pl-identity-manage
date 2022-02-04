@@ -13,7 +13,8 @@
     "prettier:fix": "node_modules/.bin/prettier --write .",
     "prepare": "husky install",
     "build": "tsc -p tsconfig.build.json",
-    "deploy": "serverless deploy"
+    "deploy": "serverless deploy",
+    "remove": "serverless remove"
   },
   "repository": {
     "type": "git",
