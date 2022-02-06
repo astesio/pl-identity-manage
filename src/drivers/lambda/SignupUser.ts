@@ -1,32 +1,15 @@
 'use strict';
 
-import { APIGatewayProxyEvent } from 'aws-lambda';
+import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
+import { JoiHelper } from '../joi/Joi';
+import { CognitoHelper } from '../cognito/Cognito';
+import { SignUpController } from '../../presenters/controllers/SignupUserController';
 
 export const handler = async (
   event: APIGatewayProxyEvent
-): Promise<LambdaResponse> => {
-  return {
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-    },
-    statusCode: 200,
-    body: JSON.stringify(
-      {
-        message: 'Go Signup! Your function executed successfully!',
-        input: event,
-      },
-      null,
-      2
-    ),
-  };
+): Promise<APIGatewayProxyResult> => {
+  const joi = new JoiHelper();
+  const cognito = new CognitoHelper();
+  const signUpController = new SignUpController(cognito, joi);
+  return signUpController.handle(event);
 };
-
-export type LambdaResponse = {
-  headers: HeaderOption;
-  statusCode: number;
-  body: string;
-};
-
-interface HeaderOption {
-  'Access-Control-Allow-Origin': string;
-}
