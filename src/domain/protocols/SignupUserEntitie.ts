@@ -6,8 +6,8 @@ import {
   identifierType,
 } from '../types/SignupUserType';
 
-export interface SignupUserEntitie<TResult> {
-  signup(user: SignupUserEntitie.Params): TResult;
+export interface SignupUserEntitie {
+  signup(user: SignupUserEntitie.Params): any;
 }
 
 export namespace SignupUserEntitie {
