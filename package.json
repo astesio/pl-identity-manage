@@ -63,6 +63,7 @@
   "dependencies": {
     "@aws-sdk/client-cognito-identity-provider": "^3.49.0",
     "aws-sdk": "^2.1069.0",
-    "joi": "^17.6.0"
+    "joi": "^17.6.0",
+    "serverless": "^3.1.1"
   }
 }
