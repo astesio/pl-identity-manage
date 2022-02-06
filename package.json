@@ -14,7 +14,9 @@
     "prepare": "husky install",
     "build": "tsc -p tsconfig.build.json",
     "deploy": "serverless deploy",
-    "remove": "serverless remove"
+    "remove": "serverless remove",
+    "dev": "serverless offline -s dev",
+    "debug": "export SLS_DEBUG=* && node --inspect node_modules/serverless/bin/serverless offline -s dev"
   },
   "repository": {
     "type": "git",
@@ -57,5 +59,10 @@
       "pre-push": "npm test --NODE_ENV=test",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.49.0",
+    "aws-sdk": "^2.1069.0",
+    "joi": "^17.6.0"
   }
 }

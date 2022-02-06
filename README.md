@@ -37,3 +37,5 @@ npm run deploy
 - [PIPELINE](https://medium.com/craftsmenltd/setting-up-a-nodejs-typescript-ci-cd-pipeline-for-aws-lambda-using-github-action-and-serverless-81f718036b4)
 - [PRETTIER](https://prettier.io/docs/en/install.html)
 - [RESOURCE-NAME](https://restfulapi.net/resource-naming)
+- [CLEAN ARCHITECTURE](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+- [THE DEPENDENCY RULE](https://khalilstemmler.com/wiki/dependency-rule)
