@@ -13,8 +13,8 @@ provider:
   region: us-east-1
   memorySize: 128
   environment:
-    user_pool_id: { Ref: UserPool }
-    client_id: { Ref: UserClient }
+    USER_POOL_ID: { Ref: UserPool }
+    CLIENT_ID: { Ref: UserClient }
   iamRoleStatements:
     - Effect: Allow
       Action:
