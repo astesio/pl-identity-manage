@@ -1,0 +1,298 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2022-02-07T02:00:21.895Z",
+  "__export_source": "insomnia.desktop.app:v2021.7.2",
+  "resources": [
+    {
+      "_id": "req_0f07d4eed99c4729a56fff0c6f08d499",
+      "parentId": "fld_c2010f6fcad04c988df57a57ef2683c0",
+      "modified": 1644199110898,
+      "created": 1644069624972,
+      "url": "http://localhost:3000/dev/identity-manage/users/signup",
+      "name": "signup",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"password\": \"password\",\n\t\"document\": \"document\",\n\t\"fullName\": \"fullName\",\n\t\"identifier\": \"astesiojose@gmail.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_171136d12c364d7fbafa9d6dfd878e93"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1644069624972,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_c2010f6fcad04c988df57a57ef2683c0",
+      "parentId": "fld_a7e096e46ebc44f4834e1e53d140e0cb",
+      "modified": 1644069611460,
+      "created": 1644069611460,
+      "name": "pl-identity-manage",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1644069611460,
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_a7e096e46ebc44f4834e1e53d140e0cb",
+      "parentId": "wrk_a8466bec380846aab34b2fa58cc3100c",
+      "modified": 1614819689381,
+      "created": 1614819689381,
+      "name": "PROJECTS",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1614819689381,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_a8466bec380846aab34b2fa58cc3100c",
+      "parentId": null,
+      "modified": 1592415345621,
+      "created": 1592415345621,
+      "name": "Insomnia",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_e712e83061bd424ab37cf2db0aec6ac8",
+      "parentId": "fld_c2010f6fcad04c988df57a57ef2683c0",
+      "modified": 1644199145610,
+      "created": 1644176768561,
+      "url": "http://localhost:3000/dev/identity-manage/users/signin",
+      "name": "signin",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"password\": \"password\",\n\t\"identifier\": \"astesiojose@gmail.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_171136d12c364d7fbafa9d6dfd878e93"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1641491577752.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_5b799a7dd6951ef49b31a1c01c2cd911cc19c7ba",
+      "parentId": "wrk_a8466bec380846aab34b2fa58cc3100c",
+      "modified": 1592415345717,
+      "created": 1592415345717,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1592415345718,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_5b799a7dd6951ef49b31a1c01c2cd911cc19c7ba",
+      "parentId": "wrk_a8466bec380846aab34b2fa58cc3100c",
+      "modified": 1597679990978,
+      "created": 1592415345721,
+      "name": "Default Jar",
+      "cookies": [
+        {
+          "creation": "2020-06-24T11:56:39.407Z",
+          "domain": "salesforce.com",
+          "expires": "2021-06-24T11:56:39.000Z",
+          "hostOnly": false,
+          "id": "4396546671965922",
+          "key": "BrowserId",
+          "lastAccessed": "2020-06-24T11:56:39.407Z",
+          "maxAge": 31536000,
+          "path": "/",
+          "value": "wzHHIbYREeqMcnuishJOgQ"
+        },
+        {
+          "creation": "2020-06-24T13:47:30.437Z",
+          "domain": "wfhmlsantander.cedrotech.com",
+          "hostOnly": true,
+          "id": "48335588056985057",
+          "key": "JSESSIONID",
+          "lastAccessed": "2020-08-17T15:59:50.977Z",
+          "path": "/",
+          "value": "BBqHQ0RC0wuDTjgFe0s-MIyUMb8voHKYqH1opQrB.cdrudiavm-hom-016"
+        }
+      ],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_1148ec87058a4c4a8563804eb5a7596d",
+      "parentId": "wrk_a8466bec380846aab34b2fa58cc3100c",
+      "modified": 1592415345622,
+      "created": 1592415345622,
+      "fileName": "Insomnia",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_23ca3d8380404280a35439cc2e354c3c",
+      "parentId": "env_5b799a7dd6951ef49b31a1c01c2cd911cc19c7ba",
+      "modified": 1642792468986,
+      "created": 1592416545540,
+      "name": "Homologation",
+      "data": {
+        "bbf_ordem_base_url": "https://kgsfdkk1pf.execute-api.us-east-1.amazonaws.com/hml/api/order",
+        "security_manager_base_url": "https://api-security-hml.invistacompi.com.br/security",
+        "security_manager_oauth2_client": "2b0gf947ev4nd8crhiog1daifs",
+        "security_manager_oauth2_secret": "b1jssic34iiqt29v8ksa4ad18m68hk6biv9olreje4uou54d98n",
+        "security_manager_base_urlv2": "https://api-security-hml.invistacompi.com.br/security/api/v2",
+        "negociacao_api_key": "xd86ltUODilq9fQwAUlU95R4RgRe0u5dPmlGZFf0",
+        "negociacao_base_url": "https://2eel02lkqh.execute-api.sa-east-1.amazonaws.com/ApiSouPi/negociacao",
+        "sales_force_base_url": "https://my-invistacompi--uat.my.salesforce.com",
+        "sales_force_autenticacao_base_url": "http://autenticacao-hml.soupi.com.br",
+        "oms_ordem_base_url": "https://wfhmlsantander.cedrotech.com/SignIn",
+        "cadastro": "https://2eel02lkqh.execute-api.sa-east-1.amazonaws.com/ApiSouPi/cadastro/v1",
+        "cadastro_api_key": "YfdPSt84xPaTnUaKwQ3bb4BXChBSwXeB3NnTZEBZ",
+        "carteria_base_url": "https://2eel02lkqh.execute-api.sa-east-1.amazonaws.com/ApiSouPi/carteira",
+        "carteria_api_key": "YfdPSt84xPaTnUaKwQ3bb4BXChBSwXeB3NnTZEBZ",
+        "permission_tombamento_toro": "https://knltz8rwm9.execute-api.us-east-1.amazonaws.com/hml",
+        "permission_tombamento_api_key": "o9wOPkk2oE3hQPIBL9ow97wYJmXqmZLW4sf7GkFN",
+        "movimentos_financeiros": "https://fszf7cc3ue.execute-api.us-east-1.amazonaws.com/hml",
+        "ordem_transicao": "https://nwaebkeyf4.execute-api.us-east-1.amazonaws.com/hml/ordem/transicao"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "bbf_ordem_base_url",
+          "security_manager_base_url",
+          "security_manager_oauth2_client",
+          "security_manager_oauth2_secret",
+          "security_manager_base_urlv2",
+          "negociacao_api_key",
+          "negociacao_base_url",
+          "sales_force_base_url",
+          "sales_force_autenticacao_base_url",
+          "oms_ordem_base_url",
+          "cadastro",
+          "cadastro_api_key",
+          "carteria_base_url",
+          "carteria_api_key",
+          "permission_tombamento_toro",
+          "permission_tombamento_api_key",
+          "movimentos_financeiros",
+          "ordem_transicao"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_ac0b478f4be34fb6b2c6ab9419527b3e",
+      "parentId": "env_5b799a7dd6951ef49b31a1c01c2cd911cc19c7ba",
+      "modified": 1638915621719,
+      "created": 1592416561030,
+      "name": "Production",
+      "data": {
+        "bbf_ordem_base_url": "https://api-bbf-ordem-prd.invistacompi.com.br/api/order",
+        "security_manager_base_url": "https://api-security.invistacompi.com.br/security",
+        "negociacao_api_key": "TNnk8iIN0p3btZJkPUdDB4Y2byMAZ0o5BkjoNNL3",
+        "negociacao_base_url": "https://fy4gfo7nbl.execute-api.sa-east-1.amazonaws.com/ApiSouPi/negociacao",
+        "sales_force_autenticacao_base_url": "http://autenticacao.soupi.com.br",
+        "sales_force_base_url": "https://my-invistacompi.my.salesforce.com",
+        "cadastro": "https://fy4gfo7nbl.execute-api.sa-east-1.amazonaws.com/ApiSouPi/cadastro/v1",
+        "cadastro_api_key": "TNnk8iIN0p3btZJkPUdDB4Y2byMAZ0o5BkjoNNL3",
+        "carteria_base_url": "https://fy4gfo7nbl.execute-api.sa-east-1.amazonaws.com/ApiSouPi/carteira",
+        "carteria_api_key": "TNnk8iIN0p3btZJkPUdDB4Y2byMAZ0o5BkjoNNL3",
+        "permission_tombamento_toro": "https://06p7gigska.execute-api.sa-east-1.amazonaws.com/prd",
+        "permission_tombamento_api_key": "JzKpX370006hHgWyfUveD31yQd5x86OQ86I8OACO",
+        "movimentos_financeiros": "https://sogcwn2uqk.execute-api.sa-east-1.amazonaws.com/prd",
+        "ordem_transicao": "https://6cm1xh7bx6.execute-api.sa-east-1.amazonaws.com/prd/ordem/transicao"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "bbf_ordem_base_url",
+          "security_manager_base_url",
+          "negociacao_api_key",
+          "negociacao_base_url",
+          "sales_force_autenticacao_base_url",
+          "sales_force_base_url",
+          "cadastro",
+          "cadastro_api_key",
+          "carteria_base_url",
+          "carteria_api_key",
+          "permission_tombamento_toro",
+          "permission_tombamento_api_key",
+          "movimentos_financeiros",
+          "ordem_transicao"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 0,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_ca19ade2c3c94cc49a245eed96ed4b00",
+      "parentId": "env_5b799a7dd6951ef49b31a1c01c2cd911cc19c7ba",
+      "modified": 1638904771516,
+      "created": 1592416687356,
+      "name": "Local",
+      "data": {
+        "bbf_ordem_base_url": "http://localhost:3003/api/order",
+        "security_manager_base_url1": "https://api-security-hml.invistacompi.com.br/security",
+        "security_manager_base_url": "https://api-security-hml.invistacompi.com.br/security",
+        "security_manager_oauth2_client": "2b0gf947ev4nd8crhiog1daifs",
+        "security_manager_oauth2_secret": "b1jssic34iiqt29v8ksa4ad18m68hk6biv9olreje4uou54d98n",
+        "negociacao_api_key": "YfdPSt84xPaTnUaKwQ3bb4BXChBSwXeB3NnTZEBZ",
+        "negociacao_base_url": "http://10.0.0.108:3002",
+        "permission_tombamento_toro": "http://localhost:3001",
+        "permission_tombamento_api_key": "o9wOPkk2oE3hQPIBL9ow97wYJmXqmZLW4sf7GkFN",
+        "movimentos_financeiros": "http://localhost:3002/api",
+        "ordem_transicao": "http://localhost:3003/api"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "bbf_ordem_base_url",
+          "security_manager_base_url1",
+          "security_manager_base_url",
+          "security_manager_oauth2_client",
+          "security_manager_oauth2_secret",
+          "negociacao_api_key",
+          "negociacao_base_url",
+          "permission_tombamento_toro",
+          "permission_tombamento_api_key",
+          "movimentos_financeiros",
+          "ordem_transicao"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 2,
+      "_type": "environment"
+    }
+  ]
+}
