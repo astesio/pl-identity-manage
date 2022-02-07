@@ -26,6 +26,25 @@ serverless config credentials -o --provider aws --key=YOUR_KEY --secret=YOUR_SEC
 npm run deploy
 ```
 
+4. To get the API url you need to open the Serverless Deploy tab of the pipeline and get the desired urls
+
+![First Draft Draw](/images/urls-serverless-urls.png)
+
+## Hooks workflow
+
+1. [Lint-Staged](https://www.npmjs.com/package/lint-staged)
+2. [Prettier](https://www.npmjs.com/package/prettier)
+3. [Jest-Test](https://jestjs.io/)
+4. [Conventional-Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+5. [Husky](https://www.npmjs.com/package/husky)
+
+## CI/CD Automate workflow
+
+We are using **[GitHub Actions](https://docs.github.com/en/actions)** to continuous integration and continuous delivery **(CI/CD)** platform.
+Every time you make **[opened, synchronize, reopened]** or **push** to **master** branch will run some steps processes our pipeline.
+
+![First Draft Draw](/images/ci-cd-pipeline.png)
+
 ## REFERENCES
 
 ### ARTICLES
