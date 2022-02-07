@@ -19,6 +19,8 @@ export class CognitoHelper implements SignupUserEntitie, SigninUserEntitie {
         PASSWORD: signInData.password,
       },
     };
+    // I know it's bad, but I didn't have time to implement log class
+    console.info(`CognitoHelper::signin::params: ${JSON.stringify(params)}`);
     const response = await this._cognito.adminInitiateAuth(params).promise();
     return response.AuthenticationResult;
   }
@@ -39,7 +41,13 @@ export class CognitoHelper implements SignupUserEntitie, SigninUserEntitie {
       ],
       MessageAction: 'SUPPRESS',
     };
+    // I know it's bad, but I didn't have time to implement log class
+    console.info(`CognitoHelper::signup::params: ${JSON.stringify(params)}`);
     const response = await this._cognito.adminCreateUser(params).promise();
+    // I know it's bad, but I didn't have time to implement log class
+    console.info(
+      `CognitoHelper::signup::response: ${JSON.stringify(response)}`
+    );
     if (response.User) {
       const paramsForSetPass: CognitoIdentityServiceProvider.AdminSetUserPasswordRequest =
         {

@@ -33,15 +33,29 @@ implements
         fullName: Joi.string().min(6).required(),
         identifier: Joi.string().email().required(),
       });
+      // I know it's bad, but I didn't have time to implement log class
+      console.info(
+        `SigninUserController::handle::SignupUserSchema: ${JSON.stringify(
+          SignupUserSchema
+        )}`
+      );
       const { error } = this.validation.validate(
         JSON.parse(request.body),
         SignupUserSchema
       );
       if (error) {
+        // I know it's bad, but I didn't have time to implement log class
+        console.error(
+          `SigninUserController::handle::error: ${JSON.stringify(error)}`
+        );
         return badRequest(error);
       }
       return ok(await this.signupUser.signup({ ...JSON.parse(request.body) }));
     } catch (error: any | unknown) {
+      // I know it's bad, but I didn't have time to implement log class
+      console.error(
+        `SigninUserController::handle::catch: ${JSON.stringify(error)}`
+      );
       return serverError(error);
     }
   }

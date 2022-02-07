@@ -31,15 +31,29 @@ implements
         password: Joi.string().required(),
         identifier: Joi.string().email().required(),
       });
+      // I know it's bad, but I didn't have time to implement log class
+      console.info(
+        `SigninUserController::handle::SignInUserSchema: ${JSON.stringify(
+          SignInUserSchema
+        )}`
+      );
       const { error } = this._validation.validate(
         JSON.parse(request.body),
         SignInUserSchema
       );
       if (error) {
+        // I know it's bad, but I didn't have time to implement log class
+        console.error(
+          `SigninUserController::handle::error: ${JSON.stringify(error)}`
+        );
         return badRequest(error);
       }
       return ok(await this._signInUser.signin({ ...JSON.parse(request.body) }));
     } catch (error: any | unknown) {
+      // I know it's bad, but I didn't have time to implement log class
+      console.error(
+        `SigninUserController::handle::catch: ${JSON.stringify(error)}`
+      );
       return serverError(error);
     }
   }
