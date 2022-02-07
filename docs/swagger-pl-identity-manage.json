@@ -32,7 +32,7 @@
             "description": "Created user object",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/User"
+              "$ref": "#/definitions/SignUp"
             }
           }
         ],
@@ -44,7 +44,7 @@
       }
     },
     "/signin": {
-      "get": {
+      "post": {
         "tags": ["user"],
         "summary": "Logs user into the system",
         "description": "",
@@ -52,18 +52,13 @@
         "produces": ["application/json"],
         "parameters": [
           {
-            "name": "identifier",
-            "in": "query",
-            "description": "The email for login",
+            "in": "body",
+            "name": "body",
+            "description": "Login user object",
             "required": true,
-            "type": "string"
-          },
-          {
-            "name": "password",
-            "in": "query",
-            "description": "The password for login in clear text",
-            "required": true,
-            "type": "string"
+            "schema": {
+              "$ref": "#/definitions/SignIn"
+            }
           }
         ],
         "responses": {
@@ -86,7 +81,7 @@
     }
   },
   "definitions": {
-    "User": {
+    "SignUp": {
       "type": "object",
       "properties": {
         "password": {
@@ -96,6 +91,17 @@
           "type": "string"
         },
         "fullName": {
+          "type": "string"
+        },
+        "identifier": {
+          "type": "string"
+        }
+      }
+    },
+    "SignIn": {
+      "type": "object",
+      "properties": {
+        "password": {
           "type": "string"
         },
         "identifier": {
