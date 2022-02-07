@@ -1,7 +1,7 @@
 import { ForgotPasswordType } from '../types/ForgotPasswordType';
 
-export interface ForgotPasswordEntitie<TResult> {
-  forgotPassword(identifier: ForgotPasswordEntitie.Params): TResult;
+export interface ForgotPasswordEntitie {
+  forgotPassword(identifier: ForgotPasswordEntitie.Params): any;
 }
 
 export namespace ForgotPasswordEntitie {

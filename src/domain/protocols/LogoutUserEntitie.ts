@@ -1,7 +1,7 @@
 import { LogoutUserType } from '../types/LogoutUserType';
 
-export interface LogoutUserEntitie<TResult> {
-  logout(idToken: LogoutUserEntitie.Params): TResult;
+export interface LogoutUserEntitie {
+  logout(idToken: LogoutUserEntitie.Params): any;
 }
 
 export namespace LogoutUserEntitie {

@@ -1,7 +1,7 @@
 import { ConfirmPasswordType } from '../types/ConfirmPasswordType';
 
-export interface ConfirmPasswordEntitie<TResult> {
-  confirmPassword(data: ConfirmPasswordEntitie.Params): TResult;
+export interface ConfirmPasswordEntitie {
+  confirmPassword(data: ConfirmPasswordEntitie.Params): any;
 }
 
 export namespace ConfirmPasswordEntitie {

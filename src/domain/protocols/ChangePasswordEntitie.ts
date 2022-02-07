@@ -1,7 +1,7 @@
 import { ChangePasswordType } from '../types/ChangePasswordType';
 
-export interface ChangePasswordEntitie<TResult> {
-  changePassword(data: ChangePasswordEntitie.Params): TResult;
+export interface ChangePasswordEntitie {
+  changePassword(data: ChangePasswordEntitie.Params): any;
 }
 
 export namespace ChangePasswordEntitie {
