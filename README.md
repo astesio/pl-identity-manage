@@ -38,6 +38,8 @@ npm run deploy
 4. [Conventional-Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 5. [Husky](https://www.npmjs.com/package/husky)
 
+![First Draft Draw](/images/hooks.png)
+
 ## CI/CD Automate workflow
 
 We are using **[GitHub Actions](https://docs.github.com/en/actions)** to continuous integration and continuous delivery **(CI/CD)** platform.
