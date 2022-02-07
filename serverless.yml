@@ -29,15 +29,15 @@ plugins:
 package:
   excludeDevDependencies: true
 functions:
-  signupUser:
+  signUpUser:
     handler: src/drivers/lambda/SignupUser.handler
     events:
       - http:
           path: identity-manage/users/signup
           method: post
           cors: true
-  loginUser:
-    handler: src/drivers/lambda/LoginUser.handler
+  signInUser:
+    handler: src/drivers/lambda/SignInUser.handler
     events:
       - http:
           path: identity-manage/users/login

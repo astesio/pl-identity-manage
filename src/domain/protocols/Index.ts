@@ -1,4 +1,4 @@
-export * from './LoginUserEntitie';
+export * from './SigninUserEntitie';
 export * from './LogoutUserEntitie';
 export * from './SignupUserEntitie';
 export * from './ForgotPasswordEntitie';

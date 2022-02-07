@@ -1,4 +1,4 @@
-export * from './LoginUserType';
+export * from './SigninUserType';
 export * from './LogoutUserType';
 export * from './SignupUserType';
 export * from './ForgotPasswordType';
