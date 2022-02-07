@@ -40,7 +40,7 @@ functions:
     handler: src/drivers/lambda/SignInUser.handler
     events:
       - http:
-          path: identity-manage/users/login
+          path: identity-manage/users/signin
           method: post
           cors: true
   logoutUser:
