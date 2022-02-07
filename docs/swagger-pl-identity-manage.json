@@ -1,0 +1,111 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a simple project implemented using the serverless framework, an authentication and authorization API using AWS Cognito IDP.",
+    "version": "1.0.0",
+    "title": "Swagger pl-identity-manage"
+  },
+  "basePath": "/identity-manage/users",
+  "tags": [
+    {
+      "name": "user",
+      "description": "Autentication and authorization users",
+      "externalDocs": {
+        "description": "Find out more about our store",
+        "url": "http://swagger.io"
+      }
+    }
+  ],
+  "schemes": ["https", "http"],
+  "paths": {
+    "/signup": {
+      "post": {
+        "tags": ["user"],
+        "summary": "Create user",
+        "description": "Router to create a new user at Cognito IDP.",
+        "operationId": "createUser",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Created user object",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
+    "/signin": {
+      "get": {
+        "tags": ["user"],
+        "summary": "Logs user into the system",
+        "description": "",
+        "operationId": "loginUser",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "identifier",
+            "in": "query",
+            "description": "The email for login",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "description": "The password for login in clear text",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "string"
+            },
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid username/password supplied"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "User": {
+      "type": "object",
+      "properties": {
+        "password": {
+          "type": "string"
+        },
+        "document": {
+          "type": "string"
+        },
+        "fullName": {
+          "type": "string"
+        },
+        "identifier": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  }
+}
