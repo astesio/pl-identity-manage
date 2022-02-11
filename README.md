@@ -61,3 +61,4 @@ Every time you make **[opened, synchronize, reopened]** or **push** to **master*
 - [CLEAN ARCHITECTURE](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 - [THE DEPENDENCY RULE](https://khalilstemmler.com/wiki/dependency-rule)
 - [AWS-LAMBDA-TYPE-DEFINITIONS](https://serverlessfirst.com/aws-lambda-type-definitions)
+- [AWS-LAMBDA-TYPESCRIPT](https://omakoleg.github.io/typescript-practices/content/lambda.html)
