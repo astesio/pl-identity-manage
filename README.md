@@ -60,3 +60,4 @@ Every time you make **[opened, synchronize, reopened]** or **push** to **master*
 - [RESOURCE-NAME](https://restfulapi.net/resource-naming)
 - [CLEAN ARCHITECTURE](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 - [THE DEPENDENCY RULE](https://khalilstemmler.com/wiki/dependency-rule)
+- [AWS-LAMBDA-TYPE-DEFINITIONS](https://serverlessfirst.com/aws-lambda-type-definitions)
